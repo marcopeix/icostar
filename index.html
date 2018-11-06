@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Icostar</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main">
+        <div class="titles">
+            <h1>🌟 Icostar 🌟</h1>
+            <h2>Ain't nobody got time to update styleguide icons</h2>
+        </div>
+        <div class="instructions">
+            <h3>How to use it:</h3>
+
+            <ol class="instruction-list">
+                <li>Upload the <code>selection.json</code> from Icomoon</li>
+                <li>The template shows the code that will be generated. <code>%icon</code> is where the icon class will be placed. Change the template as you wish!</li>
+                <li>Paste the generated code</li>
+                <li>🍌 🍌 <a class="emphasis" href="https://bonus.ly/bonuses" target="_blank">Send Banana Bucks to Marco</a> 🍌 🍌</li>
+            </ol>
+        </div>
+        <div class="template-input">
+            <h4>Template:</h4>
+            <input type="text" id="template" value="<div class=&quot;col-md-4&quot;><span class=&quot;%icon&quot;></span><code class&quot;badge ml-2&quot;>.%icon</code></div>">
+        </div>
+        <div class="important-btns">
+            <input class="btn" type="file" id="selectFiles" value="Import">
+            <button class="btn btn-import" id="import">Generate code</button>
+        </div>
+        <div class="result">
+            <textarea name="" id="result" cols="30" rows="20"></textarea>
+            <button id="copy-to-clipboard" class="btn btn-import">Copy to clipboard</button>
+        </div>
+
+        <footer class="footer">
+            <p>Made with 💪 by Marco</p>
+        </footer>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
