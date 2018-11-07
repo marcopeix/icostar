@@ -48,6 +48,20 @@ code {
     color: #e7ecef;
 }
 
+.drop-zone-area {
+    border: 4px dashed #0f7173;
+    width: 100%;
+    box-sizing: border-box;
+    height: 150px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.drop-zone-area h2 {
+    color: #e7ecef;
+    opacity: 0.3;
+}
+
 .important-btns {
     display: flex;
     justify-content: center;
