@@ -26,10 +26,10 @@ document.getElementById('import').onclick = function() {
 };
 
 // <-- Logic for drag and drop upload -->
-function handleJSONDrop(evt) {
-    evt.stopPropagation();
-    evt.preventDefault();
-    let files = evt.dataTransfer.files;
+function handleJSONDrop(e) {
+    e.stopPropagation();
+    e.preventDefault();
+    let files = e.dataTransfer.files;
     // Loop through the FileList and read
     for (let i = 0, f; f = files[i]; i++) {
 
@@ -61,10 +61,10 @@ function handleJSONDrop(evt) {
     }
 }
 
-function handleDragOver(evt) {
-    evt.stopPropagation();
-    evt.preventDefault();
-    evt.dataTransfer.dropEffect = 'copy'; // Explicitly show this is a copy.
+function handleDragOver(e) {
+    e.stopPropagation();
+    e.preventDefault();
+    e.dataTransfer.dropEffect = 'copy'; // Explicitly show this is a copy.
 }
 
 // Setup the dnd listeners.
